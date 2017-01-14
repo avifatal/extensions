@@ -164,6 +164,7 @@
     <Compile Include="Files\FilesController.cs" />
     <Compile Include="Files\FilesServer.cs" />
     <Compile Include="Isolation\IsolationServer.cs" />
+    <Compile Include="MachineLearning\ExcelController.cs" />
     <Compile Include="RestLog\RestLogFilter.cs" />
     <Compile Include="Mailing\MailingController.cs" />
     <Compile Include="Mailing\MailingServer.cs" />
@@ -213,6 +214,11 @@
     <TypeScriptCompile Include="Files\FileUploader.tsx" />
     <TypeScriptCompile Include="Files\FileDownloader.tsx" />
     <TypeScriptCompile Include="Dynamic\View\DynamicViewEntity.tsx" />
+    <TypeScriptCompile Include="MachineLearning\PredictorClient.tsx" />
+    <TypeScriptCompile Include="MachineLearning\Signum.Entities.Excel.ts">
+      <DependentUpon>Signum.Entities.MachineLearning.t4s</DependentUpon>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="MachineLearning\Templates\Predictor.tsx" />
     <TypeScriptCompile Include="Mailing\Templates\IFrameRenderer.tsx" />
     <Compile Include="Map\MapServer.cs" />
     <Compile Include="Map\MapController.cs" />
@@ -590,6 +596,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Toolbar\Signum.Entities.Toolbar.t4s" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MachineLearning\Signum.Entities.MachineLearning.t4s" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>

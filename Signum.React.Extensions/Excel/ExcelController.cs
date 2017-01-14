@@ -33,7 +33,7 @@ using Signum.Engine.Chart;
 
 namespace Signum.React.Excel
 {
-    public class ExcelController : ApiController
+    public class MachineLearningController : ApiController
     {
         [Route("api/excel/plain"), HttpPost]
         public HttpResponseMessage ToPlainExcel(QueryRequestTS request)
